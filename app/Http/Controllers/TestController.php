@@ -14,6 +14,7 @@ class TestController extends Controller
     {
         $title = 'Contoh Halaman Admin';
         $user = Auth::user()->name;
+        var_dump($user);
         return view('test', compact('title', 'user'));
     }
 

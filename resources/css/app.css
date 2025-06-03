@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @import './login.css';
+@import './dashboard.css';
+@import './navbar.css';
 
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

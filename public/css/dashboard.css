@@ -1,0 +1,14 @@
+body {
+    background-color: white
+}
+
+.welcome {
+    height: 100%;
+    margin: 10%;
+}
+
+.welcome h1 {
+    font-size: 4em;
+    color: #333;
+}
+

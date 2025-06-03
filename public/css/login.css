@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #EBE8DB;
     font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
@@ -15,19 +15,17 @@ body {
     height: 100vh;
 }
 
-div {
+.login-container {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 350px;
-    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 input {
@@ -35,6 +33,7 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 button {
