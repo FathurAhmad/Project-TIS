@@ -10,11 +10,11 @@
 <body>
   <nav>
     <div class="nav-left">
-      <a href="{{ url('/') }}">MyApp</a>
+      <a href="{{ url('/') }}">Scheduler</a>
     </div>
     <div class="nav-center">
-      <a href="{{ url('/kegiatan') }}">My Schedule</a>
       <a href="{{ url('/dashboard') }}">Dashboard</a>
+      <a href="{{ url('/kegiatan') }}">My Schedule</a>
       <a href="{{ url('/about') }}">About</a>
     </div>
     <div class="nav-right">
@@ -23,9 +23,6 @@
         @csrf
         <button type="submit">Logout</button>
       </form>
-      @else
-      <a href="{{ route('login') }}">Login</a>
-      <a href="{{ route('register') }}">Register</a>
       @endauth
     </div>
   </nav>

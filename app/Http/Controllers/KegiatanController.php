@@ -10,8 +10,9 @@ class KegiatanController extends Controller
 
     public function index()
     {
-        $kegiatans = Kegiatan::all();
+        $kegiatans = Kegiatan::paginate(10);
         return view('kegiatan', compact('kegiatans'));
+        // return view ('kegiatan');
     }
 
     public function create()
@@ -38,7 +39,7 @@ class KegiatanController extends Controller
 
     public function edit(Kegiatan $kegiatan)
     {
-        return view('kegiatan.edit', compact('kegiatan'));
+        return view('kegiatan', compact('kegiatan'));
     }
 
     public function update(Request $request, Kegiatan $kegiatan)

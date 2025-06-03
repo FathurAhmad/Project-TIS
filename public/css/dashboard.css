@@ -1,14 +1,29 @@
 body {
-    background-color: white
+    background-color: white;
 }
 
-.welcome {
-    height: 100%;
-    margin: 10%;
+.dashboard-container {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .welcome h1 {
+    margin: 0px;
     font-size: 4em;
-    color: #333;
+    color: #3D0301;
 }
 
+.welcome p:nth-child(2) {
+    margin: 0px;
+    font-size: 2.5em;
+    color: #B03052;
+}
+
+.welcome p:nth-child(3) {
+    margin: 0px;
+    font-size: 1.5em;
+    color: #D76C82;
+}

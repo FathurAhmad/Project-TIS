@@ -6,7 +6,6 @@
 </head>
 <body>
     <h2>Login</h2>
-
     @if ($errors->any())
         <div style="color: red;">
             <ul>
