@@ -12,14 +12,9 @@ return new class extends Migration
     public function up()
 {
     Schema::table('kegiatan', function (Blueprint $table) {
-        $table->string('title')->nullable();
-        $table->datetime('start')->nullable();
-        $table->datetime('end')->nullable();
-        $table->text('description')->nullable();
-        $table->string('type')->default('personal');
+        $table->foreignId('user_id')->constrained()->onDelete('cascade');
     });
 }
-
 
 
     /**
@@ -27,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kegiatans');
+        Schema::table('kegiatan', function (Blueprint $table) {
+            //
+        });
     }
 };

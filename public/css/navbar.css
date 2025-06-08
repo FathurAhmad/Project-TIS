@@ -1,9 +1,11 @@
   body{
     background-color: #EBE8DB;
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   nav {
+    font-size: 20px;
+
       background-color: #3D0301;
       padding: 10px 5%;
       display: flex;
